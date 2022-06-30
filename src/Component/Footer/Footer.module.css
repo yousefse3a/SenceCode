@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.overFlowY {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.openCloseSideNav {
+  right: -150% !important;
+  -webkit-transition: right 0.7s ease-in-out;
+  transition: right 0.7s ease-in-out;
+}
+
+.zoomOut {
+  cursor: -webkit-zoom-out !important;
+  cursor: zoom-out !important;
+}
+
+.input-div .focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-div > div > .secFont {
+  color: #6e7d93;
+}
+
+.navBackground {
+  background-color: #070b12;
+}
+
+.supTeam {
+  direction: rtl;
+  position: relative;
+  background-color: #070b12;
+  border-top: #11161f 1px solid;
+  padding: 20px;
+}
+
+.ComLogo > div > svg {
+  width: 100px;
+  height: 60px;
+}
+
+.ContectUs {
+  position: relative;
+  background-image: url("../Production/svgexport-7.svg");
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  border-top: 1px solid #11161f;
+}
+
+.ContectUs::after {
+  content: " ";
+  background-color: #070b12;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: relative;
+  width: 70%;
+  padding: 15px;
+  border-radius: 5px;
+  direction: rtl;
+  background-image: url("../Production/svgexport-8.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.Content > div > p {
+  color: antiquewhite;
+}
+
+.Content::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important;
+  background-color: #070b12;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  border-radius: 5px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: -1;
+}
+
+.btnContect {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #dd6b20;
+  color: #dd6b20;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 7px 5px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnContect:hover {
+  color: #dd6b20;
+  background-color: rgba(221, 107, 32, 0.3);
+}
+
+.powerBy {
+  background-color: #11161f;
+}
+/*# sourceMappingURL=Footer.module.css.map */

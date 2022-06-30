@@ -1,0 +1,94 @@
+$sideBarColor: rgb(7, 11, 18);
+$sideBarColorScreen: rgba(7, 11, 18, 0.5);
+$hoverColor: rgb(16, 21, 31);
+$fontColor: rgb(221, 107, 32);
+$secFont: rgb(110, 125, 147);
+$borderColor: rgb(17, 22, 31);
+$borderColor2: rgb(45, 53, 67);
+$gallaryColor: rgb(12, 16, 23);
+$wrongColor: rgb(229, 62, 62);
+
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $secFont;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.navBackground {
+  background-color: $sideBarColor;
+}
+.rtl {
+  direction: rtl;
+}
+.overFlowY {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.openCloseSideNav {
+  right: -150% !important;
+  transition: right 0.7s ease-in-out;
+}
+.zoomOut {
+  cursor: zoom-out !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+}
+@keyframes onAutoFillStart {
+  from {
+    /**/
+  }
+  to {
+    /**/
+  }
+}
+
+@keyframes onAutoFillCancel {
+  from {
+    /**/
+  }
+  to {
+    /**/
+  }
+}
+input:-webkit-autofill {
+  animation-name: onAutoFillStart;
+  -webkit-text-fill-color: $fontColor;
+  transition: background-color 100000000000s ease-in-out 0s;
+}
+
+input:not(:-webkit-autofill) {
+  animation-name: onAutoFillCancel;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.nav-item.active {
+  border-bottom: 3px solid $fontColor;
+  &:hover{
+    background-color: rgba($color: $fontColor, $alpha: 0.4);
+  }
+}
+.side-item.active{
+  background-color: $hoverColor;
+  &:hover{
+    background-color: rgba($color: $fontColor, $alpha: 0.4);
+  }
+}

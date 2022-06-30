@@ -1,0 +1,231 @@
+@import "../../index.scss";
+.Contact {
+  background-color: $sideBarColor;
+  flex-wrap: wrap;
+}
+.betweenBar {
+  height: 85%;
+  width: 1px;
+  background-color: $borderColor2;
+}
+.divSended {
+  border: 1px $borderColor2 solid;
+  border-radius: 0.9rem;
+  display: none;
+  & > div {
+    & > h4 {
+      color: $fontColor;
+    }
+    & > div {
+      display: inline-block;
+      padding: 4px;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: $borderColor2;
+      }
+    }
+  }
+}
+form {
+  display: flex;
+}
+.divInfo,
+.divTextInfo,
+.wrongBlur {
+  position: relative;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 4rem;
+  border: 1px $borderColor2 solid;
+  border-radius: 30px;
+  & > i {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  & > h5 {
+   
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    transition: 0.3s;
+    color: inherit;
+  }
+  & > input,
+  select,
+  textarea {
+    resize: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: inherit;
+    font-family: "poppins", sans-serif;
+  }
+}
+
+.wrongBlur {
+  border: 2px solid $wrongColor;
+  color: $wrongColor;
+}
+option {
+  background-color: $sideBarColor;
+}
+select {
+  display: block;
+}
+.divTextInfo {
+  height: 10rem;
+  & textarea {
+    overflow: hidden;
+  }
+  & > h5 {
+    position: absolute;
+    right: 30px;
+    top: 20%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    transition: 0.3s;
+  }
+}
+.btnSend {
+  background-color: transparent;
+  border: 1px $borderColor2 solid;
+  border-radius: 15px;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: inherit;
+  position: relative;
+  width: 6rem;
+  height: 3rem;
+  &:hover {
+    border: 1px solid $fontColor;
+    color: $fontColor;
+  }
+  & > i[naem="plane"]::before {
+    padding: 0px 0px 0px 8px;
+  }
+  & > i[naem="spin"]::before {
+    padding: 0px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.focusDiv,
+.wrongDiv,
+.corretDiv {
+  border: 2px solid $fontColor;
+  color: $fontColor;
+  & > h5 {
+    top: -3px;
+    font-size: 15px;
+    padding: 0px 10px;
+    background-color: $sideBarColor;
+  }
+}
+.wrongDiv {
+  border: 2px solid $wrongColor;
+  color: $wrongColor;
+}
+.findUS {
+  border: 1px $borderColor2 solid;
+  border-radius: 0.9rem;
+  & > a {
+    color: inherit;
+    margin: 0.5rem 0;
+    &:hover {
+      background-color: $hoverColor;
+    }
+  }
+  & > hr {
+    margin: 0 0;
+    height: 0.5px;
+    background-color: $borderColor2;
+  }
+}
+.logo {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0.6rem;
+  font-size: 1.4rem;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: inherit;
+  }
+  &:hover {
+    background-color: $hoverColor;
+  }
+}
+.linkLogo {
+  
+  & > h5 {
+    & > a {
+      color: inherit;
+    }
+    color: $fontColor;
+  }
+}
+.errorBar {
+  flex-flow: row;
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $wrongColor;
+  border-radius: 5px;
+  box-shadow: 0 0 10px white;
+  color: white;
+  z-index: 888888;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, z-index 0.7s ease-in-out;
+  > p {
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+.succesBar {
+  flex-flow: row;
+  position: fixed;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(26, 188, 156);
+  border-radius: 5px;
+  box-shadow: 0 0 10px white;
+  color: white;
+  z-index: 888888;
+  display: flex;
+  opacity: 0;
+  transition: opacity 0.7s ease-in-out, z-index 0.7s ease-in-out;
+  > p {
+    padding: 1rem;
+    font-size: 0.8rem;
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}

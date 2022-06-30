@@ -1,0 +1,40 @@
+@import "../../index.scss";
+.navbar{
+  z-index: 55555;
+  position: absolute;
+}
+@media  (max-width:992px)  {
+  .navbar{
+    position: fixed;
+    transition: background-color .5s ;
+  }
+}
+.navItem {
+  box-sizing: border-box;
+  padding: 30px 10px;
+  font-size: large;
+  font-weight: 900;
+  &:hover {
+    background-color: rgba($color: rgb(212, 227, 233), $alpha: 0.4);
+    
+  }
+}
+.navbarBrand {
+  padding: 30px 10px;
+}
+.navbarToggler {
+  border-radius: 50%;
+  padding: 0.75rem 0.75rem;
+  font-size: 1.5rem;
+  color: $fontColor !important;
+  line-height: 1;
+  background-color: transparent;
+  transition: box-shadow 0.15s ease-in-out;
+  border:rgba($color: #000000, $alpha: 0.4) ;
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.4);
+  }
+  &:focus{
+      box-shadow: none;
+  }
+}

@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.overFlowY {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.openCloseSideNav {
+  right: -150% !important;
+  -webkit-transition: right 0.7s ease-in-out;
+  transition: right 0.7s ease-in-out;
+}
+
+.zoomOut {
+  cursor: -webkit-zoom-out !important;
+  cursor: zoom-out !important;
+}
+
+.input-div .focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-div > div > .secFont {
+  color: #6e7d93;
+}
+
+.navBackground {
+  background-color: #070b12;
+}
+
+.navbar {
+  z-index: 55555;
+  position: absolute;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    position: fixed;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+  }
+}
+
+.navItem {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px 10px;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.navItem:hover {
+  background-color: rgba(221, 107, 32, 0.4);
+  border-bottom: 3px solid #dd6b20;
+}
+
+.navbarBrand {
+  padding: 30px 10px;
+}
+
+.navbarToggler {
+  border-radius: 50%;
+  padding: 0.75rem 0.75rem;
+  font-size: 1.5rem;
+  color: #dd6b20 !important;
+  line-height: 1;
+  background-color: transparent;
+  -webkit-transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: -webkit-box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  border: rgba(0, 0, 0, 0.4);
+}
+
+.navbarToggler:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbarToggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/*# sourceMappingURL=Navbar.module.css.map */

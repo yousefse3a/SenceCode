@@ -1,0 +1,86 @@
+@import "../../index.scss";
+.studios {
+  background-color: $gallaryColor;
+  border-top: 1px solid $borderColor;
+  border-bottom: 1px solid $borderColor;
+}
+.studioTypes {
+  flex-flow: wrap;
+  & > div {
+    border: 1px solid $borderColor;
+    border-radius: 10px;
+    margin: 1rem;
+    background-color: $sideBarColor;
+    & div[datatype="cardImg"] {
+      color: white;
+      border-bottom: 1px solid $borderColor;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 5;
+        background-image: -webkit-gradient(
+          linear,
+          left bottom,
+          left top,
+          color-stop(0.15, rgba($sideBarColor, 0.9)),
+          color-stop(0.44, rgba($sideBarColor, 0.1)),
+          color-stop(0.88, rgba($sideBarColor, 0.1))
+        );
+      }
+      & > h4 {
+        z-index: 6;
+      }
+      & img {
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+    & div[datatype="cardInfo"] {
+      color: white;
+      margin: auto;
+      padding: 15px 0px;
+      flex-flow: wrap;
+    }
+  }
+}
+.divIcon {
+  display: inline-block;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid $borderColor;
+  border-radius: 20%;
+  font-size: 0.9rem;
+  color: rgb(128, 165, 188);
+  & i::before {
+    padding-left: 5px;
+    color: $fontColor;
+  }
+}
+.studioFollower {
+  flex-flow: wrap;
+  & > div {
+    flex-flow: wrap;
+    & p{
+      font-size: 1.2rem;
+    }
+    & i {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: $sideBarColor;
+      color: $fontColor;
+      font-size: 1.5rem;
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

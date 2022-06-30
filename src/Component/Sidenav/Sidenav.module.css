@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.overFlowY {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.openCloseSideNav {
+  right: -150% !important;
+  -webkit-transition: right 0.7s ease-in-out;
+  transition: right 0.7s ease-in-out;
+}
+
+.zoomOut {
+  cursor: -webkit-zoom-out !important;
+  cursor: zoom-out !important;
+}
+
+.input-div .focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-div > div > .secFont {
+  color: #6e7d93;
+}
+
+.navBackground {
+  background-color: #070b12;
+}
+
+.Outer {
+  z-index: 5555444;
+  background-color: rgba(7, 11, 18, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  -webkit-transition: right .7s ease-in-out;
+  transition: right .7s ease-in-out;
+}
+
+.SideBackColor {
+  background-color: #070b12;
+  direction: rtl;
+}
+
+.title {
+  color: #6e7d93;
+  font-size: 1rem;
+}
+
+h3,
+h4,
+p {
+  font-size: 0.9rem;
+}
+
+.logo {
+  border-radius: 55px 0 0 55px;
+  padding: 25px;
+}
+
+.logo > a {
+  color: #dd6b20;
+}
+
+.logo > a > div > p {
+  color: #6e7d93;
+}
+
+.logo > a > i {
+  color: #6e7d93;
+  font-size: 1rem;
+}
+
+.logo:hover {
+  background-color: #10151f;
+}
+
+.fliped {
+  direction: ltr;
+}
+
+#scrollBar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #070b12;
+  border-radius: 10px;
+}
+
+#scrollBar::-webkit-scrollbar {
+  width: 5px;
+  background-color: #f5f5f5;
+}
+
+#scrollBar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgba(255, 213, 2, 0.93)), color-stop(0.72, #dd6b20), color-stop(0.86, #dd6b20));
+}
+/*# sourceMappingURL=Sidenav.module.css.map */

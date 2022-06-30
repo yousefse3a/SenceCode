@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.overFlowY {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.openCloseSideNav {
+  right: -150% !important;
+  -webkit-transition: right 0.7s ease-in-out;
+  transition: right 0.7s ease-in-out;
+}
+
+.zoomOut {
+  cursor: -webkit-zoom-out !important;
+  cursor: zoom-out !important;
+}
+
+.input-div .focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+
+.input-div > div > .secFont {
+  color: #6e7d93;
+}
+
+.navBackground {
+  background-color: #070b12;
+}
+
+.ProductionLanding {
+  background-image: url("images_gallery-33@2400.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.ProductionLanding::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgba(7, 11, 18, 0.7)), color-stop(0.72, rgba(7, 11, 18, 0.5)), color-stop(0.86, rgba(7, 11, 18, 0.3)));
+}
+
+.goDown {
+  color: #dd6b20;
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.goDown:hover {
+  background-color: rgba(221, 107, 32, 0.4);
+}
+
+.goDown::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.proSene {
+  height: 75vh;
+  background-image: url("../Production/img/images_gallery-19@1600.jfif");
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  position: relative;
+}
+
+.proSene::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, color-stop(3%, #070b12), color-stop(rgba(7, 11, 18, 0.5)), color-stop(45%, #070b12));
+  background: linear-gradient(90deg, #070b12 3%, rgba(7, 11, 18, 0.5), #070b12 45%);
+}
+
+.proSeneBack {
+  background-image: url("../Production/svgexport-4.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.proSeneBack::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(7, 11, 18, 0.2), rgba(7, 11, 18, 0.7), #070b12);
+}
+
+.film {
+  height: 80vh;
+  width: 100%;
+  position: relative;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.44, rgba(7, 11, 18, 0.7)), color-stop(0.66, rgba(7, 11, 18, 0.5)), color-stop(0.88, rgba(7, 11, 18, 0.3)));
+}
+
+.film img {
+  -webkit-transform: translate(-50%, -50%) rotateY(180deg);
+          transform: translate(-50%, -50%) rotateY(180deg);
+}
+
+.fixedImge {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url("img/images_gallery-32@2400.jfif");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: -10;
+  -webkit-transition: background-image .5s ease-in-out;
+  transition: background-image .5s ease-in-out;
+}
+
+.rc {
+  background-color: #070b12;
+  height: 50vh;
+}
+
+.gallary {
+  background-color: #0c1017;
+  overflow-x: hidden;
+}
+
+.gallary .gallaryLoc {
+  width: 150%;
+  margin: 3rem -10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.gallary .gallaryLoc > div > i {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.gallary .gallaryLoc > div > i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.gallary .gallaryLoc > div > i:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.gallaryLayer {
+  z-index: 9999999;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.gallaryLayer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse;
+          flex-flow: row-reverse;
+  z-index: 2222;
+}
+
+.gallaryLayer ul > li {
+  margin: 10px;
+}
+
+.gallaryLayer i {
+  cursor: pointer;
+  z-index: 2222;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  position: relative;
+}
+
+.gallaryLayer i::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.gallaryImg {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  -webkit-transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .gallaryImg {
+    width: 95%;
+    height: 50%;
+  }
+  .gallary .gallaryLoc {
+    width: 300%;
+  }
+  .proSene {
+    height: 50vh;
+    background-size: cover;
+  }
+  .proSene::after {
+    background: -webkit-gradient(linear, left top, right top, color-stop(5%, #070b12), color-stop(rgba(7, 11, 18, 0.5)), color-stop(95%, #070b12));
+    background: linear-gradient(90deg, #070b12 5%, rgba(7, 11, 18, 0.5), #070b12 95%);
+  }
+}
+/*# sourceMappingURL=Production.module.css.map */

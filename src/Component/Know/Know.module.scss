@@ -1,0 +1,28 @@
+@import "../../index.scss";
+.rc {
+    background-color: $sideBarColor;
+    h3 {
+      color: $fontColor;
+      font-weight: bolder;
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 700;
+    }
+    button {
+      border: 1px solid $fontColor;
+      border-radius: 10px;
+      color: $fontColor;
+      font-weight: 600;
+      font-size: 1.2rem;
+      padding: 10px 7px;
+      direction: ltr;
+      &:hover {
+        color: $fontColor;
+        background-color: rgba($color: $fontColor, $alpha: 0.3);
+      }
+      & i::before{
+        padding-right: 5px;
+      }
+    }
+  }

@@ -1,0 +1,38 @@
+@import "../../index.scss";
+.proSene {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  background-color: $sideBarColor;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba($sideBarColor, 1) 7%,
+      rgba($sideBarColor, 0.5),
+      rgba($sideBarColor, 1) 40%
+    );
+  }
+}
+.proSenePara {
+  z-index: 44;
+  background: transparent;
+  padding: 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  & > h2 {
+    color: $fontColor;
+    font-weight: bolder;
+  }
+}
+.proSeneBack {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
